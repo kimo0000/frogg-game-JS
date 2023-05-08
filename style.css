@@ -1,0 +1,103 @@
+*, ::after, ::before {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    padding-left: 25px;
+    padding-right: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 50%;
+    width: 550px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#on_off {
+    display: inline-block;
+    width: fit-content;
+    padding: 5px 12px;
+    border-radius: 8px;
+    font-weight: 700;
+    margin: 0 auto;
+    background: #f50;
+    color: #fff;
+    transform: translateY(0px);
+    box-shadow: 0 4px 2px #555;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#on_off:active {
+    transform: translateY(4px);
+    box-shadow: 0 0px 2px #555;
+}
+
+.container .froggy {
+    width: 182px;
+    height: 182px;
+    border: 1px solid #000;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 auto;
+}
+
+.froggy div {
+    width: 20px;
+    height: 20px;
+}
+
+.frogg_red {
+    background: red;
+}
+
+.frogg_blue {
+    background: blue;
+}
+
+.l1, .l2, .l3 {
+    background: green;
+}
+
+.l4, .l5 {
+    background: #ddd;
+}
+
+.c1 {
+   background: #000;
+}
+
+.c2, .c3 {
+    background: purple;
+}
+
+.frogg {
+    background: yellow;
+}
